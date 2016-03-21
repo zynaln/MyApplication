@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    >
+
+    <SurfaceView android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/surfaceview"
+        android:layout_above="@+id/Rellay1"
+        android:layout_alignParentTop="true" />
+    <RelativeLayout
+        android:id="@+id/Rellay1"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        >
+
+        <Button  android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+                android:text="菜单"
+                android:id="@+id/menu"
+                />
+        <Button  android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="播放"
+            android:layout_toRightOf="@id/menu"
+            android:id="@+id/play"
+            />
+        <Button  android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂停"
+            android:layout_toRightOf="@id/play"
+            android:id="@+id/pause"
+            />
+        <Button  android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/pause"
+            android:text="停止"
+            android:id="@+id/stop"
+            />
+        <Button  android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/stop"
+           android:text="重置"
+            android:id="@+id/reset"
+            />
+            <Button  android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="文字说明"
+                android:id="@+id/text"
+                android:layout_toRightOf="@id/reset"
+                />
+
+    </RelativeLayout>
+
+</RelativeLayout>

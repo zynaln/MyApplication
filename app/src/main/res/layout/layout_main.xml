@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="80dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="学易多媒体课件"
+            android:textSize="32dp"
+            android:textColor="#FFFFFF"/>
+        <Button
+            android:id="@+id/Button1"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="退出"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/layout"
+            android:textSize="32dp" />
+        <AutoCompleteTextView
+            android:id="@+id/actv"
+            android:layout_width="313dp"
+            android:layout_height="40dp"
+            android:background="@drawable/layout"
+            android:layout_alignParentBottom="true"
+            />
+        <Button
+            android:id="@+id/Button2"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/Button1"
+            android:text="搜索"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/actv"
+            android:textSize="32dp"
+            android:background="@drawable/layout"/>
+
+    </RelativeLayout>
+
+    　<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/MyGridView"
+        android:layout_alignParentTop="true"
+        android:background="#FFFFFF"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:columnWidth="90dp"
+        android:stretchMode="columnWidth"
+        android:numColumns="3"
+        android:layout_marginTop="10dp"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:gravity="center">
+    </GridView>
+
+</LinearLayout>
